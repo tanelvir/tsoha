@@ -24,7 +24,7 @@ valintalista("paiva", range(1, 31));
 valintalista("kuukausi", range(1, 12));
 valintalista("vuosi", range(1900, 2010));
 ?>
-echo "<p>Henkilötunnuksesi loppuosa:</p>
+<p>Henkilötunnuksesi loppuosa:</p>
 <input type="text" name="henkilöllisyystunnus"></p>
 <input type="submit" value="Kirjaudu">
 </form>
