@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
  <head>
   <title>PHP Test</title>
@@ -8,7 +9,7 @@
 <body>
  <?php echo '<p>Ole hyvä ja syötä henkilötunnuksesi kirjautuaksesi sisään</p>'; ?> 
  </body>
-<form action="kirjautuminen.php" method="post">
+<form action="sisaankirjautunut.php" method="post">
 <h3>Kirjautuminen</h3>
 <?php
 function valintalista($nimi, $sisalto) {
@@ -22,11 +23,12 @@ function valintalista($nimi, $sisalto) {
 echo "<p>Valitse syntymäpäiväsi:</p>";
 valintalista("paiva", range(1, 31));
 valintalista("kuukausi", range(1, 12));
-valintalista("vuosi", range(1900, 2010));
+valintalista("vuosi", range(1900, 2011));
 ?>
 <p>Henkilötunnuksesi loppuosa:</p>
 <input type="text" name="henkilöllisyystunnus"></p>
-<input type="submit" value="Kirjaudu">
+<hr>
+<a href="sisaankirjautunut.php">Kirjaudu</a>
 </form>
 <hr>
 </html>
