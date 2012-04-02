@@ -3,7 +3,7 @@
   <title>PHP Test</title>
  </head>
  <body>
-<h3>Kirjautuminen</h3> 
+<h3>Tervetuloa äänestykseen!</h3> 
  </body>
 <body>
  <?php echo '<p>Ole hyvä ja syötä henkilötunnuksesi kirjautuaksesi sisään</p>'; ?> 
@@ -24,8 +24,7 @@ valintalista("paiva", range(1, 31));
 valintalista("kuukausi", range(1, 12));
 valintalista("vuosi", range(1900, 2010));
 ?>
-<p>Tunnus: <br>
-echo "<p>Henkilötunnuksesi loppuosa:</p>";
+echo "<p>Henkilötunnuksesi loppuosa:</p>
 <input type="text" name="henkilöllisyystunnus"></p>
 <input type="submit" value="Kirjaudu">
 </form>
